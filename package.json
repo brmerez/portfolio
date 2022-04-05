@@ -1,0 +1,12 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "server/src/server.js",
+  "repository": "https://github.com/brmerez/portfolio.git",
+  "scripts": {
+    "build": "cd client && npm run build",
+    "start": "node server/src/server.js"
+  },
+  "author": "brmerez <brmerez@gmail.com>",
+  "license": "MIT"
+}
