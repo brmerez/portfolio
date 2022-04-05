@@ -19,7 +19,8 @@ export const Wrapper = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  align-items: center;
 `;
 
 interface ChamadaProps {
@@ -59,5 +60,55 @@ export const Chamada = styled(animated.div)`
   }
   p{
     font-size: 2.4rem;
+  }
+`;
+
+export const Animation = styled.div`
+  display: flex;
+  /* flex-direction: column; */
+  width: 50rem;
+  height: 5rem;
+  align-items: center;
+  justify-content:center;
+  overflow: hidden;
+  /* border: 1px solid magenta; */
+  gap: 1rem;
+  .animate{
+    /* animation: scroll 1s infinite linear forwards; */
+    font-size: 4rem;
+    width: 5rem;
+    border: 1px dashed #222;
+    height: 100vh;
+    /* min-width:2.5rem;
+    min-height:2.5rem; */
+    /* border-radius: 50%; */
+    border: 2px solid #222;
+  }
+
+  @keyframes scroll{
+    0%{
+      transform: translateY(200%);
+    }
+    100%{
+      transform: translateY(-200%);
+    }
+  }
+
+  @keyframes dots {
+    0%{
+      transform: translateY(0%);
+    }
+    25%{
+      transform: translateY(166%);
+    }
+    50%{
+      transform: translateY(0%);
+    }
+    75%{
+      transform: translateY(-166%);
+    }
+    100%{
+      transform: translateY(0%);
+    }
   }
 `;

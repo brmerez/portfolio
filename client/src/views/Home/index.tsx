@@ -1,7 +1,7 @@
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
-import { Container, Wrapper, Chamada, Socials } from "./styles";
+import { Animation, Wrapper, Chamada, Socials } from "./styles";
 import { Base, Navbar } from "../../components";
-import { useSpring } from "@react-spring/web";
+import { useSpring, useTransition } from "@react-spring/web";
 import { About, Projetos, Contato } from "../";
 
 export default function Home() {
